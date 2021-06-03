@@ -26,16 +26,6 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    },
-    {
-      path: '/test',
-      name: 'TestPage',
-      component: TestPage
-    },
-    {
-      path: '/feed',
       name: 'FeedPage',
       component: FeedPage
     },

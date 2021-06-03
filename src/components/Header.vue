@@ -2,16 +2,13 @@
     <header uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
         <nav class="uk-navbar-container header" uk-navbar>
             <div class="uk-navbar-left" id="asdasd">
-                BaseAPP
+                <img src="../assets/logo/Logo.png" style="height:40px;" />
             </div>
             <div class="uk-navbar-center mobile-hide">
                 <ul class="uk-navbar-nav">
                     <li><router-link to="/">HOME</router-link></li>
-                    <li><router-link to="/feed">FEED</router-link></li>
+                    <li><router-link to="/map">MAP</router-link></li>
                     <li><router-link to="/bbs">BOARD</router-link></li>
-                    <li v-if="isAuthenticated2"><a href="#" @click="onClickLogout">LOGOUT</a></li>
-                    <li v-else><router-link to="/login">LOGIN</router-link></li>
-                    <li ><router-link to="/join">JOIN</router-link></li>
                     <li><router-link to="/about">ABOUT</router-link></li>
                 </ul>
             </div>
@@ -21,7 +18,7 @@
                 </span>
                 
                 <span v-else>
-                    <span uk-icon="icon: user" @click.prevent="goLogin" class="header-right-icon" ></span>
+                    <span uk-icon="icon: user" @click.prevent="goLogin" style="color:#40f1ce" class="header-right-icon" ></span>
                 </span>
                 <span uk-icon="icon: pencil" v-if="isAuthenticated2" uk-toggle="target: #modal" class="header-right-icon" ></span>
             </div>

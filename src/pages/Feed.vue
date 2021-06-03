@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="uk-child-width-1-4@l uk-child-width-1-3@m uk-child-width-1-2" uk-grid style="padding:10px 0px;"
+        <div class="uk-child-width-1-3@l uk-child-width-1-3@m uk-child-width-1-1" uk-grid style="padding:10px 0px;"
                 v-infinite-scroll="loadMore" 
                 infinite-scroll-disabled="busy" infinity-scroll-distance="limit"
                 uk-grid="masonry: true"
@@ -37,7 +37,7 @@ export default {
             page:0,
             busy: false,
             itemNum: '',
-            limit: 12
+            limit: 5
         }
     },
     methods: {

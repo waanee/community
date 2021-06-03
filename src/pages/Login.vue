@@ -27,6 +27,8 @@
                     </p>
                     </fieldset>
                     </form>
+
+                    <router-link to="/join">회원가입</router-link>
                 </div>
                 
 
