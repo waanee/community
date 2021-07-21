@@ -127,7 +127,7 @@ footer .container {
 }
 
 .container {
-    width: 1024px;
+    width: 700px;
     margin: 0 auto;
 }
 
@@ -385,11 +385,11 @@ footer .container {
 }
 
 
-.topScroll {
-    position:fixed; bottom:60px; right: 10px;
+.menu {
+    position:fixed; bottom:15px; right: 15px;
 }
 
-.topScroll .top, .topScroll .reflash {
+.menu .top{
     background: #505050;
     padding: 12px;
     border-radius: 25px;
@@ -410,6 +410,29 @@ footer .container {
     width: 600px;
     height: 700px;
 }
+
+/* user icon & user name */
+.userInfo {
+    text-align: left;
+    padding: 15px;
+}
+
+.userInfo .userIcon {
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    border: 1px solid #d3d3d3;
+    background-color: #f3f3f3;
+    float: left;
+}
+
+.userInfo .userName {
+    float: left;
+    padding-left: 10px;
+}
+
+
+
 
 @media (max-width:1024px){
     .popup-modal {
@@ -446,6 +469,7 @@ footer .container {
         z-index: 1001;
         background: #fff;
         padding: 12px;
+        text-align: left;
     }
 
     .contents-top .right {

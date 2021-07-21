@@ -2,15 +2,17 @@
     <header uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
         <nav class="uk-navbar-container header" uk-navbar>
             <div class="uk-navbar-left" id="asdasd">
-                <img src="../assets/logo/Logo.png" style="height:40px;" />
+                <!-- <img src="../assets/logo/Logo.png" style="height:30px;" /> -->
+                <!-- COMMUNITY -->
             </div>
             <div class="uk-navbar-center mobile-hide">
-                <ul class="uk-navbar-nav">
+                <!-- <ul class="uk-navbar-nav">
                     <li><router-link to="/">HOME</router-link></li>
                     <li><router-link to="/map">MAP</router-link></li>
-                    <li><router-link to="/bbs">BOARD</router-link></li>
+                    <li><router-link to="/bbs">COMMUNITY</router-link></li>
                     <li><router-link to="/about">ABOUT</router-link></li>
-                </ul>
+                </ul> -->
+                SITE TITLE
             </div>
             <div class="uk-navbar-right">
                 <span v-if="isAuthenticated2">

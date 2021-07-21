@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
+import MainPage from '@/pages/Main'
+
 import HelloWorld from '@/components/HelloWorld'
 
 import TestPage from '@/components/TestPage'
@@ -24,10 +26,15 @@ Vue.use(Router)
 export default new Router({
   mode:"history",
   routes: [
+    // {
+    //   path: '/',
+    //   name: 'FeedPage',
+    //   component: FeedPage
+    // },
     {
       path: '/',
-      name: 'FeedPage',
-      component: FeedPage
+      name: 'MainPage',
+      component: MainPage
     },
     {
       path: '/post/:id',

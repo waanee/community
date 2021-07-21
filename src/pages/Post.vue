@@ -4,11 +4,18 @@
         
             <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid v-for="(item, index) in postDetail" v-bind:key="postDetail.id">
                 <div class="contents-top">
+
+                    
                     <a href="javascript:history.back();" uk-icon="icon: arrow-left; ratio: 1.5"></a>
                     <span class="title">Daily Feed</span>
-                    <span class="right">
-                        <a href="#" uk-icon="icon: list; ratio: 1.3"></a>
+                    <span class="right uk-inline">
+                        <button type="button" uk-icon="icon: more; ratio: 1.3"></button>
+                        <div uk-dropdown="mode: click">
+                            팔로우<br>
+                            공유
+                        </div>
                     </span>
+
                 </div>
                 <div class="uk-card-media-left uk-cover-container">
                    

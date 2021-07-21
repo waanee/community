@@ -6,6 +6,7 @@
     </div>
     <FooterComponent/>
     <PostWrite/>
+    <Offcanvas/>
   </div>
 </template>
 
@@ -13,13 +14,15 @@
 import HeaderComponent from './components/Header'
 import FooterComponent from './components/Footer'
 import PostWrite from './components/PostWrite'
+import Offcanvas from './components/OffCanvas.vue'
 
 export default {
   name: 'App',
   components: {
     HeaderComponent,
     FooterComponent,
-    PostWrite
+    PostWrite,
+    Offcanvas
   },
   methods: {
   }
