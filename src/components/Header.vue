@@ -1,28 +1,37 @@
 <template>
-    <header uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
-        <nav class="uk-navbar-container header" uk-navbar>
+    <header uk-sticky="">
+        <nav class="uk-navbar-container container header" uk-navbar>
             <div class="uk-navbar-left" id="asdasd">
-                <!-- <img src="../assets/logo/Logo.png" style="height:30px;" /> -->
-                <!-- COMMUNITY -->
+                <!-- logo -->
+                <span uk-icon="icon: home; ratio: 1.1" class="header-left-icon" ></span> 
             </div>
             <div class="uk-navbar-center mobile-hide">
                 <!-- <ul class="uk-navbar-nav">
                     <li><router-link to="/">HOME</router-link></li>
-                    <li><router-link to="/map">MAP</router-link></li>
                     <li><router-link to="/bbs">COMMUNITY</router-link></li>
                     <li><router-link to="/about">ABOUT</router-link></li>
                 </ul> -->
-                SITE TITLE
+                
+                <div class="uk-margin searchbox">
+                    <div class="uk-inline">
+                        <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: search"></span>
+                        <input class="uk-input" type="text" placeholder="SEARCH..">
+                    </div>
+                </div>
+
             </div>
             <div class="uk-navbar-right">
+                
                 <span v-if="isAuthenticated2">
-                    <span uk-icon="icon: sign-out" class="header-right-icon" @click.prevent="onClickLogout"></span>
+                    <span uk-icon="icon: sign-out; ratio: 1.1" class="header-right-icon" @click.prevent="onClickLogout"></span>
                 </span>
                 
                 <span v-else>
-                    <span uk-icon="icon: user" @click.prevent="goLogin" style="color:#40f1ce" class="header-right-icon" ></span>
+                    <span uk-icon="icon: user; ratio: 1.1" @click.prevent="goLogin" class="header-right-icon" ></span>
                 </span>
-                <span uk-icon="icon: pencil" v-if="isAuthenticated2" uk-toggle="target: #modal" class="header-right-icon" ></span>
+                <span uk-icon="icon: pencil; ratio: 1.1" v-if="isAuthenticated2" uk-toggle="target: #modal" class="header-right-icon" ></span>
+            
+                <span uk-icon="icon: grid; ratio: 1.1" class="header-right-icon" uk-toggle="target: #offcanvas-slide" ></span>
             </div>
         </nav>
     </header>

@@ -5,7 +5,6 @@ import MainPage from '@/pages/Main'
 
 import HelloWorld from '@/components/HelloWorld'
 
-import TestPage from '@/components/TestPage'
 import AboutPage from '@/pages/About'
 import JoinPage from '@/pages/Join'
 import LoginPage from '@/pages/login'
@@ -26,16 +25,16 @@ Vue.use(Router)
 export default new Router({
   mode:"history",
   routes: [
-    // {
-    //   path: '/',
-    //   name: 'FeedPage',
-    //   component: FeedPage
-    // },
     {
       path: '/',
-      name: 'MainPage',
-      component: MainPage
+      name: 'FeedPage',
+      component: FeedPage
     },
+    // {
+    //   path: '/',
+    //   name: 'MainPage',
+    //   component: MainPage
+    // },
     {
       path: '/post/:id',
       name: 'PostPage',

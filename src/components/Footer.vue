@@ -2,7 +2,7 @@
     <div>
     
     <div class="menu" style="">
-        <button class="top" uk-icon="icon: menu; ratio: 1" type="button" uk-toggle="target: #offcanvas-slide"></button>
+        <button class="top" uk-icon="icon: chevron-up; ratio: 1" type="button" uk-scroll></button>
     </div>
     
     <footer><div class="container">Copyright &copy; Community All Right Reserved.</div></footer>

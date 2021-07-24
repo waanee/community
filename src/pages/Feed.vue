@@ -1,6 +1,7 @@
 <template>
-    <div>
-        <div class="uk-child-width-1-3@l uk-child-width-1-3@m uk-child-width-1-2" uk-grid style="padding:10px 0px;"
+<div>
+    <div class="content-feed">
+        <div class="uk-child-width-1-2@l uk-child-width-1-2@m uk-child-width-1-1" uk-grid style="padding:10px 0px;"
                 v-infinite-scroll="loadMore" 
                 infinite-scroll-disabled="busy" infinity-scroll-distance="limit"
                 uk-grid="masonry: true"
@@ -8,10 +9,26 @@
 
             <div v-for="(item, index) in posts" v-bind:key="item.id" >                
                 <div class="uk-card uk-card-default">
+
+
+                    <div class="uk-card-header">
+                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto">
+                                <img class="uk-border-circle" width="40" height="40" src="https://getuikit.com/docs/images/avatar.jpg">
+                            </div>
+                            <div class="uk-width-expand">
+                                <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                            </div>
+                        </div>
+                    </div>
                 
                     <div class="uk-card-media-top uk-cover-container" v-if="item.po_files">
                         <img v-bind:src="item.img.files_url" class="border-round" alt="" @click="goPage(item.po_no)">
                         
+                    </div>
+
+                    <div class="uk-card-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     </div>
                     
                     <div>
@@ -25,6 +42,32 @@
 
         </div>
     </div>
+
+    <div class="content-right">
+        <div uk-sticky="offset: 80" style="text-align:left;">
+            
+            <h4 class="uk-heading-line"><span>TAGS</span></h4>
+
+            <div id="cate">
+                <span class="uk-badge"><a># 배경화면</a></span>
+                <span class="uk-badge"><a># 유튜브</a></span>
+                <span class="uk-badge"><a># background</a></span>
+                <span class="uk-badge"><a># youtube</a></span>
+                <span class="uk-badge"><a># 배경화면</a></span>
+                <span class="uk-badge"><a># 유튜브</a></span>
+                <span class="uk-badge"><a># 배경화면</a></span>
+                <span class="uk-badge"><a># 유튜브</a></span>
+                <span class="uk-badge"><a># 배경화면</a></span>
+                <span class="uk-badge"><a># 유튜브</a></span>
+                <span class="uk-badge"><a># 배경화면</a></span>
+                <span class="uk-badge"><a># 유튜브</a></span>
+            </div>
+
+            <h4 class="uk-heading-line"><span>BEST</span></h4>
+
+        </div>
+    </div>
+</div>
 </template>
 
 <script>
